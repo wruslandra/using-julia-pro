@@ -1,0 +1,274 @@
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ date
+Sat 20 Mar 2021 12:48:51 PM +08
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ uname -a
+Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 #1 SMP PREEMPT_RT 
+Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ cd using-julia/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ ls -al
+total 36
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 19 12:23 .
+drwxrwxr-x 9 wruslan wruslan 4096 Mar 19 01:32 ..
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 20 12:36 docs
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 19 12:01 figures
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 19 10:14 files
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 19 14:20 .git
+-rw-rw-r-- 1 wruslan wruslan   27 Mar 19 01:32 README.md
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 19 14:26 sessions
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 19 13:30 src
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ tree ./
+./
+├── docs
+│   ├── manual
+│   │   └── julia-1.54-documentation
+│   │       ├── 01-Manual
+│   │       │   ├── Part-00-10
+│   │       │   │   ├── 00-Julia Documentation · The Julia Language.pdf
+│   │       │   │   ├── 01-Getting Started · The Julia Language.pdf
+│   │       │   │   ├── 02-Variables · The Julia Language.pdf
+│   │       │   │   ├── 03-Integers and Floating-Point Numbers · The Julia Language.pdf
+│   │       │   │   ├── 04-Mathematical Operations and Elementary Functions · The Julia Language.pdf
+│   │       │   │   ├── 05-Complex and Rational Numbers · The Julia Language.pdf
+│   │       │   │   ├── 06-Strings · The Julia Language.pdf
+│   │       │   │   ├── 07-Control Flow · The Julia Language.pdf
+│   │       │   │   ├── 07-Functions · The Julia Language.pdf
+│   │       │   │   ├── 08-Scope of Variables · The Julia Language.pdf
+│   │       │   │   ├── 09-Types · The Julia Language.pdf
+│   │       │   │   └── 10-Methods · The Julia Language.pdf
+│   │       │   ├── Part-11-20
+│   │       │   │   ├── 11-Constructors · The Julia Language.pdf
+│   │       │   │   ├── 12-Conversion and Promotion · The Julia Language.pdf
+│   │       │   │   ├── 13-Interfaces · The Julia Language.pdf
+│   │       │   │   ├── 14-Modules · The Julia Language.pdf
+│   │       │   │   ├── 15-Documentation · The Julia Language.pdf
+│   │       │   │   ├── 16-Metaprogramming · The Julia Language.pdf
+│   │       │   │   ├── 17-Multi-dimensional Arrays · The Julia Language.pdf
+│   │       │   │   ├── 18-Missing Values · The Julia Language.pdf
+│   │       │   │   ├── 19-Networking and Streams · The Julia Language.pdf
+│   │       │   │   └── 20-Parallel Computing · The Julia Language.pdf
+│   │       │   ├── Part-21-30
+│   │       │   │   ├── 21-Asynchronous Programming · The Julia Language.pdf
+│   │       │   │   ├── 22-Multi-Threading · The Julia Language.pdf
+│   │       │   │   ├── 23-Multi-processing and Distributed Computing · The Julia Language.pdf
+│   │       │   │   ├── 24-Running External Programs · The Julia Language.pdf
+│   │       │   │   ├── 25-Calling C and Fortran Code · The Julia Language.pdf
+│   │       │   │   ├── 26-Handling Operating System Variation · The Julia Language.pdf
+│   │       │   │   ├── 27-Environment Variables · The Julia Language.pdf
+│   │       │   │   ├── 28-Embedding Julia · The Julia Language.pdf
+│   │       │   │   ├── 29-Code Loading · The Julia Language.pdf
+│   │       │   │   └── 30-Profiling · The Julia Language.pdf
+│   │       │   └── Part-31-40
+│   │       │       ├── 31-Stack Traces · The Julia Language.pdf
+│   │       │       ├── 32-Performance Tips · The Julia Language.pdf
+│   │       │       ├── 33-Workflow Tips · The Julia Language.pdf
+│   │       │       ├── 34-Style Guide · The Julia Language.pdf
+│   │       │       ├── 35-Frequently Asked Questions · The Julia Language.pdf
+│   │       │       ├── 36-Noteworthy Differences from other Languages · The Julia Language.pdf
+│   │       │       └── 37-Unicode Input · The Julia Language.pdf
+│   │       ├── 02-Base
+│   │       │   ├── 01-Essentials · The Julia Language.pdf
+│   │       │   ├── 02-Collections and Data Structures · The Julia Language.pdf
+│   │       │   ├── 03-Mathematics · The Julia Language.pdf
+│   │       │   ├── 04-Numbers · The Julia Language.pdf
+│   │       │   ├── 05-Strings · The Julia Language.pdf
+│   │       │   ├── 06-Arrays · The Julia Language.pdf
+│   │       │   ├── 07-Tasks · The Julia Language.pdf
+│   │       │   ├── 08-Multi-Threading · The Julia Language.pdf
+│   │       │   ├── 09-Constants · The Julia Language.pdf
+│   │       │   ├── 10-Filesystem · The Julia Language.pdf
+│   │       │   ├── 11-I_O and Network · The Julia Language.pdf
+│   │       │   ├── 12-Punctuation · The Julia Language.pdf
+│   │       │   ├── 13-Sorting and Related Functions · The Julia Language.pdf
+│   │       │   ├── 14-Iteration utilities · The Julia Language.pdf
+│   │       │   ├── 15-C Interface · The Julia Language.pdf
+│   │       │   ├── 16-C Standard Library · The Julia Language.pdf
+│   │       │   ├── 17-StackTraces · The Julia Language.pdf
+│   │       │   └── 18-SIMD Support · The Julia Language.pdf
+│   │       ├── 03-Standard-Library
+│   │       │   ├── 01-Base64 · The Julia Language.pdf
+│   │       │   ├── 02-CRC32c · The Julia Language.pdf
+│   │       │   ├── 03-Dates · The Julia Language.pdf
+│   │       │   ├── 04-Delimited Files · The Julia Language.pdf
+│   │       │   ├── 05-Distributed Computing · The Julia Language.pdf
+│   │       │   ├── 06-File Events · The Julia Language.pdf
+│   │       │   ├── 07-Future · The Julia Language.pdf
+│   │       │   ├── 08-Interactive Utilities · The Julia Language.pdf
+│   │       │   ├── 09-LibGit2 · The Julia Language.pdf
+│   │       │   ├── 10-Dynamic Linker · The Julia Language.pdf
+│   │       │   ├── 11-Linear Algebra · The Julia Language.pdf
+│   │       │   ├── 12-Logging · The Julia Language.pdf
+│   │       │   ├── 13-Markdown · The Julia Language.pdf
+│   │       │   ├── 14-Memory-mapped I_O · The Julia Language.pdf
+│   │       │   ├── 15-Pkg · The Julia Language.pdf
+│   │       │   ├── 16-Printf · The Julia Language.pdf
+│   │       │   ├── 17-Profiling · The Julia Language.pdf
+│   │       │   ├── 18-The Julia REPL · The Julia Language.pdf
+│   │       │   ├── 19-Random Numbers · The Julia Language.pdf
+│   │       │   ├── 20-SHA · The Julia Language.pdf
+│   │       │   ├── 21-Serialization · The Julia Language.pdf
+│   │       │   ├── 22-Shared Arrays · The Julia Language.pdf
+│   │       │   ├── 23-Sockets · The Julia Language.pdf
+│   │       │   ├── 24-Sparse Arrays · The Julia Language.pdf
+│   │       │   ├── 25-Statistics · The Julia Language.pdf
+│   │       │   ├── 26-Unit Testing · The Julia Language.pdf
+│   │       │   ├── 27-UUIDs · The Julia Language.pdf
+│   │       │   └── 28-Unicode · The Julia Language.pdf
+│   │       └── 04-Developer-Documentation
+│   │           ├── Part-01-10
+│   │           │   ├── 01-Reflection and introspection · The Julia Language.pdf
+│   │           │   ├── 02-Initialization of the Julia runtime · The Julia Language.pdf
+│   │           │   ├── 03-Julia ASTs · The Julia Language.pdf
+│   │           │   ├── 04-More about types · The Julia Language.pdf
+│   │           │   ├── 05-Memory layout of Julia Objects · The Julia Language.pdf
+│   │           │   ├── 06-Eval of Julia code · The Julia Language.pdf
+│   │           │   ├── 07-Calling Conventions · The Julia Language.pdf
+│   │           │   ├── 08-High-level Overview of the Native-Code Generation Process · The Julia Language.pdf
+│   │           │   ├── 09-Julia Functions · The Julia Language.pdf
+│   │           │   └── 10-Base.Cartesian · The Julia Language.pdf
+│   │           ├── Part-11-20
+│   │           │   ├── 11-Talking to the compiler (the meta mechanism) · The Julia Language.pdf
+│   │           │   ├── 12-SubArrays · The Julia Language.pdf
+│   │           │   ├── 13-isbits Union Optimizations · The Julia Language.pdf
+│   │           │   ├── 14-System Image Building · The Julia Language.pdf
+│   │           │   ├── 15-Working with LLVM · The Julia Language.pdf
+│   │           │   ├── 16-printf() and stdio in the Julia runtime · The Julia Language.pdf
+│   │           │   ├── 17-Bounds checking · The Julia Language.pdf
+│   │           │   ├── 18-Proper maintenance and care of multi-threading locks · The Julia Language.pdf
+│   │           │   ├── 19-Arrays with custom indices · The Julia Language.pdf
+│   │           │   └── 20-Module loading · The Julia Language.pdf
+│   │           └── Part-21-30
+│   │               ├── 21-Inference · The Julia Language.pdf
+│   │               ├── 22-Julia SSA-form IR · The Julia Language.pdf
+│   │               └── 23-Static analyzer annotations for GC correctness in C code · The Julia Language.pdf
+│   └── references
+│       ├── Asynchronous(parallel)-versus-Synchronous(sequential)-Julia.pdf
+│       ├── Brief-on-julia-programming-language.pdf
+│       └── JuliaVsPython.pdf
+├── figures
+│   ├── jpg
+│   │   ├── Screenshot from 2021-03-19 11-02-14.jpg
+│   │   ├── Screenshot from 2021-03-19 11-03-12.jpg
+│   │   ├── Screenshot from 2021-03-19 11-03-43.jpg
+│   │   ├── Screenshot from 2021-03-19 11-06-18.jpg
+│   │   ├── Screenshot from 2021-03-19 11-19-52.jpg
+│   │   ├── Screenshot from 2021-03-19 11-28-42.jpg
+│   │   ├── Screenshot from 2021-03-19 11-29-22.jpg
+│   │   ├── Screenshot from 2021-03-19 11-31-01.jpg
+│   │   ├── Screenshot from 2021-03-19 11-35-35.jpg
+│   │   └── Screenshot from 2021-03-19 11-46-31.jpg
+│   └── png
+│       ├── Screenshot from 2021-03-19 11-02-14.png
+│       ├── Screenshot from 2021-03-19 11-03-12.png
+│       ├── Screenshot from 2021-03-19 11-03-43.png
+│       ├── Screenshot from 2021-03-19 11-06-18.png
+│       ├── Screenshot from 2021-03-19 11-19-52.png
+│       ├── Screenshot from 2021-03-19 11-28-42.png
+│       ├── Screenshot from 2021-03-19 11-29-22.png
+│       ├── Screenshot from 2021-03-19 11-31-01.png
+│       ├── Screenshot from 2021-03-19 11-35-35.png
+│       └── Screenshot from 2021-03-19 11-46-31.png
+├── files
+│   ├── Plot-Examples-Julia-Session.txt
+│   └── Plots-for-JuliaPro.txt
+├── README.md
+├── sessions
+│   ├── juliapro-atomIDE-installation-setup.txt
+│   ├── session-001.txt
+│   ├── session-002.txt
+│   └── session-003.txt
+└── src
+    ├── julia-interactive-plots
+    │   ├── julia-plots-interactive.txt
+    │   └── results-julia-plots-interactive
+    │       ├── jpg
+    │       │   ├── Screenshot from 2021-03-19 12-52-33.jpg
+    │       │   ├── Screenshot from 2021-03-19 12-54-13.jpg
+    │       │   ├── Screenshot from 2021-03-19 12-55-58.jpg
+    │       │   ├── Screenshot from 2021-03-19 12-57-31.jpg
+    │       │   ├── Screenshot from 2021-03-19 12-59-10.jpg
+    │       │   ├── Screenshot from 2021-03-19 13-14-45.jpg
+    │       │   ├── Screenshot from 2021-03-19 13-15-40.jpg
+    │       │   ├── Screenshot from 2021-03-19 13-16-35.jpg
+    │       │   └── Screenshot from 2021-03-19 13-25-04.jpg
+    │       └── png
+    │           ├── Screenshot from 2021-03-19 12-52-33.png
+    │           ├── Screenshot from 2021-03-19 12-54-13.png
+    │           ├── Screenshot from 2021-03-19 12-55-58.png
+    │           ├── Screenshot from 2021-03-19 12-57-31.png
+    │           ├── Screenshot from 2021-03-19 12-59-10.png
+    │           ├── Screenshot from 2021-03-19 13-14-45.png
+    │           ├── Screenshot from 2021-03-19 13-15-40.png
+    │           ├── Screenshot from 2021-03-19 13-16-35.png
+    │           └── Screenshot from 2021-03-19 13-25-04.png
+    └── synchronous-vs-asynschronous
+        ├── julia-execute-functions-async.jl
+        ├── julia-execute-functions-sync-and-async.jl
+        ├── Result-full-details-showing-async-tasks-time-overlaps.txt
+        └── screenshots
+            ├── jpg
+            │   ├── Screenshot at 2019-05-21 10-58-55.jpg
+            │   ├── Screenshot at 2019-05-21 11-00-24.jpg
+            │   └── Screenshot at 2019-05-21 11-05-33.jpg
+            └── png
+                ├── Screenshot at 2019-05-21 10-58-55.png
+                ├── Screenshot at 2019-05-21 11-00-24.png
+                └── Screenshot at 2019-05-21 11-05-33.png
+
+29 directories, 166 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ git add .
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ git commit -m "documentation manual julia-1.5.4"
+[main d838411] documentation manual julia-1.5.4
+ 110 files changed, 116 insertions(+), 3 deletions(-)
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/00-Julia Documentation \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/01-Getting Started \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/02-Variables \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/03-Integers and Floating-Point Numbers \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/04-Mathematical Operations and Elementary Functions \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/05-Complex and Rational Numbers \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/06-Strings \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/07-Control Flow \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/07-Functions \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/08-Scope of Variables \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/09-Types \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-00-10/10-Methods \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-11-20/11-Constructors \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-11-20/12-Conversion and Promotion \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-11-20/13-Interfaces \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-11-20/14-Modules \302\267 The Julia Language.pdf"
+ create mode 100644 "docs/manual/julia-1.54-documentation/01-Manual/Part-11-20/15-Documentation \302\267 The Julia Language.pdf"
+....
+....
+===========================================================
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ git push origin main
+Username for 'https://github.com': wruslandra
+Password for 'https://wruslandra@github.com': 
+Enumerating objects: 132, done.
+Counting objects: 100% (132/132), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (127/127), done.
+Writing objects: 100% (127/127), 14.75 MiB | 64.00 KiB/s, done.
+Total 127 (delta 24), reused 0 (delta 0)
+remote: Resolving deltas: 100% (24/24), completed with 3 local objects.
+To https://github.com/wruslandra/using-julia.git
+   cce50ab..d838411  main -> main
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+

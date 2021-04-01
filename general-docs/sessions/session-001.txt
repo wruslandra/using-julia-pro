@@ -1,0 +1,88 @@
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ date
+Fri 19 Mar 2021 12:27:03 PM +08
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ uname -a
+Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 #1 SMP PREEMPT_RT 
+Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ lsb_release -a
+LSB Version:	core-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ 
+
+===========================================================
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra$ cd using-julia/
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ ls -al
+total 36
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 19 12:23 .
+drwxrwxr-x 9 wruslan wruslan 4096 Mar 19 01:32 ..
+drwxrwxr-x 3 wruslan wruslan 4096 Mar 19 12:23 docs
+drwxrwxr-x 4 wruslan wruslan 4096 Mar 19 12:01 figures
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 19 10:14 files
+drwxrwxr-x 8 wruslan wruslan 4096 Mar 19 01:32 .git
+-rw-rw-r-- 1 wruslan wruslan   27 Mar 19 01:32 README.md
+drwxrwxr-x 2 wruslan wruslan 4096 Mar 19 12:23 sessions
+drwxrwxr-x 3 wruslan wruslan 4096 Mar 19 12:18 src
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ tree ./
+./
+├── docs
+│   └── references
+│       ├── Asynchronous(parallel)-versus-Synchronous(sequential)-Julia.pdf
+│       ├── Brief-on-julia-programming-language.pdf
+│       └── JuliaVsPython.pdf
+├── figures
+│   ├── jpg
+│   │   ├── Screenshot from 2021-03-19 11-02-14.jpg
+│   │   ├── Screenshot from 2021-03-19 11-03-12.jpg
+│   │   ├── Screenshot from 2021-03-19 11-03-43.jpg
+│   │   ├── Screenshot from 2021-03-19 11-06-18.jpg
+│   │   ├── Screenshot from 2021-03-19 11-19-52.jpg
+│   │   ├── Screenshot from 2021-03-19 11-28-42.jpg
+│   │   ├── Screenshot from 2021-03-19 11-29-22.jpg
+│   │   ├── Screenshot from 2021-03-19 11-31-01.jpg
+│   │   ├── Screenshot from 2021-03-19 11-35-35.jpg
+│   │   └── Screenshot from 2021-03-19 11-46-31.jpg
+│   └── png
+│       ├── Screenshot from 2021-03-19 11-02-14.png
+│       ├── Screenshot from 2021-03-19 11-03-12.png
+│       ├── Screenshot from 2021-03-19 11-03-43.png
+│       ├── Screenshot from 2021-03-19 11-06-18.png
+│       ├── Screenshot from 2021-03-19 11-19-52.png
+│       ├── Screenshot from 2021-03-19 11-28-42.png
+│       ├── Screenshot from 2021-03-19 11-29-22.png
+│       ├── Screenshot from 2021-03-19 11-31-01.png
+│       ├── Screenshot from 2021-03-19 11-35-35.png
+│       └── Screenshot from 2021-03-19 11-46-31.png
+├── files
+│   ├── Plot-Examples-Julia-Session.txt
+│   └── Plots-for-JuliaPro.txt
+├── README.md
+├── sessions
+│   ├── juliapro-atomIDE-installation-setup.txt
+│   └── session-001.txt
+└── src
+    └── synchronous-vs-asynschronous
+        ├── julia-execute-functions-async.jl
+        ├── julia-execute-functions-sync-and-async.jl
+        ├── Result-full-details-showing-async-tasks-time-overlaps.txt
+        └── screenshots
+            ├── jpg
+            │   ├── Screenshot at 2019-05-21 10-58-55.jpg
+            │   ├── Screenshot at 2019-05-21 11-00-24.jpg
+            │   └── Screenshot at 2019-05-21 11-05-33.jpg
+            └── png
+                ├── Screenshot at 2019-05-21 10-58-55.png
+                ├── Screenshot at 2019-05-21 11-00-24.png
+                └── Screenshot at 2019-05-21 11-05-33.png
+
+12 directories, 37 files
+wruslan@HPEliteBook8470p-Ub2004-rt38:~/github/wruslandra/using-julia$ 
+
+===========================================================
+ALHAMDULILLAH 3 TIMES WRY.
+===========================================================
+
